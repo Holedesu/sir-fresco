@@ -1,0 +1,248 @@
+/* Fonts */
+
+/* montserrat-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('./fonts/montserrat-v24-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/montserrat-v24-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('./fonts/montserrat-v24-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/montserrat-v24-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* Common settings */
+
+body {
+    font-family: 'Montserrat';
+    background-color: #C7C7C7;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+span {
+    font-weight: bold;
+    color: #272727;
+}
+
+/* Header */
+
+.header-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding: 59px 0 0 94px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    width: 30px;
+    height: 6px;
+    background-image: url(imgs/open-btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #C7C7C7;
+    border: none;
+    margin-right: 82px;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+
+.active{
+    width: 21px;
+    height: 20px;
+    background-image: url(imgs/close-btn.svg);
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    display: none;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #272727;
+    margin-right: 49px;
+    text-decoration: none;
+}
+
+/* Main logo*/
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.main-container {
+    margin-bottom: 185px;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-logo-box {
+    margin-right: 40px;
+}
+
+.logo-img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.logo-bottle {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.logo-text  {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #272727;
+    margin: 26px 0 0 58px;
+}
+
+.title-main {
+    display: none;
+}
+
+/* Drinks */
+
+.main-drinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-drinks-container{
+    max-width: 556px;
+    text-align: left;
+    margin-right: 89px;
+}
+
+.main-title-drinks {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #272727;
+}
+
+.main-drinks-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #787878;
+}
+
+.main-bottles {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer {
+    margin-bottom: 112px;
+}
+
+.footer-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer-copy {
+    text-align: center;
+}
+
+.footer-copy-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #787878;
+}
+
+/* Media Settings */
+
+@media (max-width: 1919px) {
+    .main-logo {
+        flex-direction: column;
+        margin-top: 99px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .main-drinks {
+        flex-direction: column-reverse;
+    }
+
+    .main-logo-box {
+        margin: 0;
+        width: 457px;
+    }
+
+    .main-drinks-container {
+        margin-right: 0;
+    }
+
+    .header-container{
+        padding-left: 63px;
+    }
+
+    .logo-text {
+        margin: 21px 0 0 42px;
+    }
+}
+
+@media (max-width: 833px) {
+    .main-logo {
+        margin-top: 68px;
+    }
+
+    .logo-text {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .main-logo-box {
+        margin: 0;
+        width: 276px;
+    }
+
+    .main-drinks-container {
+        margin-right: 0;
+    }
+
+    .header-container{
+        padding-left: 36px;
+    }
+
+    .logo-text {
+        margin: 16px 0 0 26px;
+    }
+}
